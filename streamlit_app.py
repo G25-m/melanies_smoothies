@@ -64,4 +64,4 @@ if ingredients_list:
 
 #st.text(smoothiefroot_response.json())   
         
-  st.success('Your Smoothie is ordered!', icon="✅")
+st.success('Your Smoothie is ordered!', icon="✅")
