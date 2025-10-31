@@ -31,6 +31,7 @@ ingredients_list = st.multiselect(
 )
 
 if ingredients_list:
+  
     ingredients_string = ''
 
     for fruit_chosen in ingredients_list:
@@ -42,7 +43,7 @@ if ingredients_list:
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/{search_on}")
         sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
       
-        st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
+        #st.write('The search value for ', fruit_chosen,' is ', search_on, '.')
       
         
         #fruityvice_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + fruit_chosen")
